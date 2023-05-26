@@ -1,0 +1,146 @@
+aside.profile{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: hsl(235, 46%, 20%);
+    height: calc(100% - 40px);
+    border-radius: 10px;
+}
+
+aside.profile .top img{
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid hsl(0,100%,100%);
+}
+
+aside.profile .top{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    background-color: hsl(246, 80%, 60%);
+    padding: 40px 80px 40px 50px;
+}
+
+aside.profile .top .report p{
+    color: hsl(236, 100%, 87%);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+aside.profile .top .report h1{
+    color: hsl(0,100%,100%);
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+aside.profile .setDate{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 15px;
+    padding-left: 50px;
+}
+
+aside.profile .setDate li{
+    font-weight: 300;
+    color: hsl(235, 45%, 61%);
+    transition: 0.5s;
+}
+
+aside.profile .setDate li:hover{
+    font-weight: 400;
+    color: hsl(0,100%,100%);
+}
+
+@media screen and (max-width : 1300px){
+    .profile{
+        width: 100%;
+        height: max-content !important;
+        gap: 20px !important    ;
+
+    }
+
+    .top{
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 70px;
+        background-color: hsl(246, 80%, 60%);
+        padding: 20px 10% 20px 10% !important;
+        width: 80%;
+    }
+
+    .setDate{
+        width: 84%;
+        flex-direction: row !important;
+        justify-content: space-around;
+        padding: 0% 8% 20px 8% !important;
+    }
+
+    aside.profile .top img{
+        max-width: 80px;
+        min-width: 60px;
+        height: auto;
+        border-radius: 50%;
+        border: 3px solid hsl(0,100%,100%);
+    }
+}
+
+@media screen and (max-width : 768px) {
+    
+    .profile{
+        width: 100%;
+        gap: 20px !important    ;
+
+    }
+
+    .top{
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 70px;
+        background-color: hsl(246, 80%, 60%);
+        padding: 20px 10% 20px 10% !important;
+        width: 80%;
+    }
+
+    .setDate{
+        flex-direction: row !important;
+        justify-content: space-around !important;
+        width: 100% !important;
+        padding: 0px 0px 20px 0px !important;
+    }
+
+    aside.profile .top img{
+        max-width: 80px;
+        min-width: 60px;
+        height: auto;
+        border-radius: 50%;
+        border: 3px solid hsl(0,100%,100%);
+    }
+    
+}
+
+@media screen and (max-width : 300px) {
+    aside.profile .top .report h1{
+        color: hsl(0,100%,100%);
+        font-size: 2.10em;
+        font-weight: 300;
+        margin-top: 5px;
+    }
+
+    aside.profile .top .report p{
+        color: hsl(236, 100%, 87%);
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
